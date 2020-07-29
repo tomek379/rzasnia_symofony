@@ -42,25 +42,25 @@
 
 
 <ul>
-   <li class="selected"><a href="index.php" class="menu"><span>Strona Główna</span></a></li>
-    <li class='active has-sub'><a href="galeria/galeria.php" class="menu"><span>Galeria</span></a><span class="rozwin">+</span>
+   <li class="selected"><a href="{{ asset('/') }}" class="menu"><span>Strona Główna</span></a></li>
+    <li class='active has-sub'><a href="{{ asset('galeria') }}" class="menu"><span>Galeria</span></a><span class="rozwin">+</span>
       <ul>
-         <li><a href="galeria/galeria-yt.php" class="menu"><span>Filmy</span></a></li>
+         <li><a href="{{ asset('galeria-yt') }}" class="menu"><span>Filmy</span></a></li>
       </ul>
    </li>
-   <li class='active has-sub'><a href="repertuar/repertuar.php" class="menu"><span>Repertuar</span></a><span class="rozwin">+</span>
+   <li class='active has-sub'><a href="{{ asset('repertuar') }}" class="menu"><span>Repertuar</span></a><span class="rozwin">+</span>
       <ul>
-         <li><a href="repertuar/posluchaj-nas.php" class="menu"><span>Posłuchaj nas</span></a></li>
+         <li><a href="{{ asset('posluchaj-nas') }}" class="menu"><span>Posłuchaj nas</span></a></li>
       </ul>
    </li>
-   <li class='active has-sub'><a href="informacje/informacje.php" class="menu"><span>Informacje</span></a><span class="rozwin">+</span>
+   <li class='active has-sub'><a href="{{ asset('informacje') }}" class="menu"><span>Informacje</span></a><span class="rozwin">+</span>
       <ul>
-         <li><a href="informacje/osiagniecia.php" class="menu"><span>Osiągnięcia</span></a></li>
-         <li><a href="informacje/czlonkowie.php" class="menu"><span>Członkowie</span></a></li>
-         <li><a href="informacje/kapelmistrz.php" class="menu"><span>Kapelmistrz</span></a></li>
+         <li><a href="{{ asset('osiagniecia') }}" class="menu"><span>Osiągnięcia</span></a></li>
+         <li><a href="{{ asset('czlonkowie') }}" class="menu"><span>Członkowie</span></a></li>
+         <li><a href="{{ asset('kapelmistrz') }}" class="menu"><span>Kapelmistrz</span></a></li>
       </ul>
    </li>
-   <li class='last'><a href="kontakt/kontakt.php" class="menu"><span>Kontakt</span></a></li>
+   <li class='last'><a href="{{ asset('kontakt') }}" class="menu"><span>Kontakt</span></a></li>
 </ul>
 
 

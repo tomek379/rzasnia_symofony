@@ -7,5 +7,5 @@ index:
     controller: App\Controller\ArticleController::index
     
 kapelmistrz:
-    path: /informacje/kapelmistrz
+    path: /kapelmistrz
     controller: App\Controller\ArticleController::kapelmistrz
