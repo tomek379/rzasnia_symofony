@@ -1,0 +1,995 @@
+@charset "UTF-8";
+
+
+
+a.aktual:active
+{
+	color:#FFFF00;
+	
+}
+a.aktual:hover
+{
+	color:#008bff;
+	text-decoration: none;
+}
+
+body
+{
+	background-image:url('../images/tlostrony.png');
+}
+a 
+{
+	text-decoration: none;
+}
+a:link
+{
+	color: #0000FF;
+}
+a:visited
+{
+	color: #0000FF;
+}
+a:active
+{
+	color: #FFFF00;
+}
+a:hover
+{
+	color:#FFFF00;
+}
+a.polubnashref
+{
+	color:#ffffff;
+}
+img.galeria
+{
+	max-height:130px;
+	max-width:215px;
+	width:auto;
+	height:auto;
+}
+img.akt
+{
+	max-height:160px;
+	max-width:196px;
+	width:auto;
+	height:auto;
+	border: 2px double blue;
+}
+img.news
+{
+	max-height:130px;
+	max-width:200px;
+	width:auto;
+	height:auto;
+
+}
+
+h1.article
+{
+	font-size:40px;
+	color:blue;
+	
+}
+h2.title_wpis
+{
+	font-size:30px;
+}
+h2.title_news
+{
+	font-size:40px;
+}
+h2.osiagi
+{
+	font-size:20px;
+	font-weight: normal;
+}
+h2.czlonkowie
+{
+	font-size:60px;
+}
+h2.czlonknaz
+{
+font-size:20px;	
+}
+h2
+{
+	font-size:15px;
+}
+figure
+{
+	margin:0px;
+	padding:0px;
+}
+.clear
+{
+	clear: both;
+}
+.slide 
+{
+	display:none;
+	
+}
+.meinmein
+{
+	float: left;
+	height: 40px;
+	padding-left: 45px;
+	padding-right: 45px;
+	font-family: cursive;
+	
+}
+.new
+{
+	text-align: left;
+	width:100%;
+	height:300px;
+}
+.newlinia
+{
+	width: 100%;
+	height: 15px;
+	background-image:url('../images/mid/stronaglowna/linia.png')
+}
+.newtitle
+{
+	width:100%;
+	font-size:40px;
+	font-family:verdana;
+}
+.newdata
+{
+	width:100%;
+	
+}
+.newopis
+{
+	float:left;
+	padding-left: 20px;
+	width:100%;
+    color: #0000FF;	
+}
+.newimg
+{
+	float:left;
+	width:100%;
+	height:160px;
+}
+.newprzedwiecej
+{
+	clear:both;
+	float:left;
+	width:100%;
+	
+}
+.newwiecej:hover
+{
+
+	background-image:url('../images/mid/stronaglowna/wiecej2.png');
+}
+.newwiecej
+{
+	float:left;
+	width:80px;
+	height:50px;
+	background-image:url('../images/mid/stronaglowna/wiecej.png');
+}
+.stronapage
+{
+	width:100%;
+	font-size: 20px;
+}
+
+.stopkapolubnas1
+{
+
+	height: 80px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:5px;
+	margin-top:5px;
+	background-color: #4668b3;
+	color: #FFFFFF;
+}
+.stopkapolubnas1:hover
+{
+	background-color: #3557a2;
+	color: #FFFFFF;
+}
+.stopkapolubnas2
+{
+
+	height: 80px;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:5px;
+	margin-top:5px;
+	background-color: #d94328;
+	color: #FFFFFF;
+}
+.stopkapolubnas2:hover
+{
+	background-color: #c83217;
+	color: #FFFFFF;
+}
+
+.osiagrok
+{
+	color:#000000;
+}
+.galeriacontainerimg
+{
+	
+	height: 188px;
+	margin-bottom: 11px;
+	margin-top: 10px;
+}
+.galeriaimgtlo
+{
+
+	margin-bottom: 10px;
+	height: 138px;
+	background-image: url('../images/mid/galeria/imgtlo.png');
+}
+
+.galeriaimg
+{
+
+	height: 131px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom: auto;
+	margin-top: auto;
+}
+.galeriaimgtitle
+{
+	margin-left: 10px;
+	margin-right: 10px;
+
+	font-size: 13px;
+	text-align: center;
+	color: #0000ff;
+}
+.galeriaimgdata
+{
+	margin-left: 10px;
+	margin-right: 10px;
+
+
+	font-size: 13px;
+	text-align: center;
+}
+.galeriavideo
+{
+width:100%;
+	margin-bottom: 11px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.tlosekcja
+{
+   max-width: 100%;
+   height: 330px;
+   margin-bottom:20px;
+}
+
+.sekcjaimg
+{
+   width: 100%;
+   height: 260px;
+}
+.sekcjanazwa
+{
+   width: 100%;
+   height: 100px;
+   padding-top: 180px;
+   
+}
+.czlo
+{
+	height: 225px;
+	padding-top: 10px;
+}
+.czloinfo
+{
+  width: 150px;
+  height: 225px;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.czlozdjetlo
+{
+	width: 155px;
+	height: 175px;
+	
+	float:left;
+}
+.czlozdje
+{
+   width: 150px;
+   height: 170px;
+}
+.czloname
+{
+	width: 160px;
+	height: 50px;
+}
+.zdjecieczlonka
+{
+	border: 3px double blue;
+	width:149px;
+	height:170px;
+}
+.plytaname
+{
+	width: 100%;
+	height: 70px;
+	padding-bottom: 10px;
+}
+h2.plyta
+{
+	color: blue;
+	font-size: 50px;
+}
+.plytadata
+{
+	width: 100%;
+	height: 25px;
+	color: black;
+	padding-bottom: 10px;
+}
+.plytaimg
+{
+	width: 250px;
+	height: 250px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#plyta1, #plyta2
+{
+	width: 100%;
+   display: none;
+}
+#galnews
+{
+	width:100%;
+	font-size:30px;
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;	
+}
+#galtlonews
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	height: 138px;
+	background-image: url('../images/mid/galeria/imgtlo.png');
+}
+#container
+{
+	text-align:center;
+position: relative;
+}
+#topcenter
+{
+	position: relative;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#top2
+{
+	width: 100%;
+	height: 460px;
+	background-image: url('../images/top/toptlo.jpg');
+	position: relative;
+	
+}
+#tlotop
+{
+	position: relative;
+	height: 460px;
+	background-image: url('../images/top/topcenter.jpg');
+}
+#infotitle
+{
+	margin-bottom:30px;
+}
+#toptop
+{
+	position: relative;
+	width: 970px;
+	height: 400px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+
+}
+#topbot
+{
+	position: relative;
+	width: 970px;
+	height: 60px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#toptopleft
+{
+	position: relative;
+	width: 430px;
+	height: 400px;
+	float: left;
+	color: blue;
+}
+#toptopright
+{
+	position: relative;
+	width: 500px;
+	height: 400px;
+	float: left;
+}
+#slider
+{
+width:100%;
+	height:400px;
+	max-height:400px;
+	position:absolute;
+	z-index:1;
+}
+#slidernad
+{
+width:100%;
+	height:400px;
+	position:absolute;
+	z-index:2;
+}
+#slideshow_slides 
+{ 
+position: relative;
+    height:400px;
+	color:grey;
+	cursor:pointer;
+}
+#slideshow
+{
+	position: relative;
+
+}
+#topbothead
+{
+	position: relative;
+	width: 970px;
+	height: 50px;
+	text-align: center;
+}
+#mein
+{
+	position: relative;
+	height: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	z-index:100;
+}
+#mid
+{
+	width: 100%;
+
+}
+#midhead
+{
+	width:970px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#midleft
+{
+	float:left;
+	width: 100%;
+}
+
+#midleftv2
+{
+	float:left;
+	width: 100%;
+
+   text-align:center;
+}
+#midright
+{
+	float:left;
+	width: 100%;
+	padding-left:20px;
+	text-align:center;
+    background-image:url('../images/mid/stronaglowna/midright.png');
+}
+#midlefthead
+{
+	width: 100%;
+
+}
+#midleftinfo
+{
+	width:100%;
+	height:50px;
+}
+#nicmid
+{
+	width:270px;
+	height:50px;
+}
+#logogminy
+{
+	width:100%;
+	
+	padding-bottom:20px;
+	padding-top:0px;
+
+}
+
+
+#maparzasniatitle
+{
+	width: 100%;
+	
+	color: #0000ff;
+}
+#maparzasniamapa
+{
+	width: 100%;
+	height: 150px;
+}
+#midright div
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+#midright h2
+{
+	margin-left:auto;
+	margin-right:auto;
+	color:blue;
+}
+#najblikondata
+{
+	width: 200px;
+	height: 25px;
+}
+#stopka
+{
+	padding-top: 15px;
+	width: 100%;
+	height: 250px;
+	clear: both;
+}
+
+#stopkatitle
+{
+	height: 180px;
+	padding-top:60px;
+	padding-bottom:10px;
+	color: #FFFFFF;
+	font-size: 30px;
+}
+#stopkaadmin
+{
+	height: 180px;
+	padding-top:60px;
+	padding-bottom:10px;
+	color: #FFFFFF;
+	font-size: 30px;
+	text-align:center;
+}
+#stopkapolubnas
+{
+	padding-top:15px;
+	padding-bottom:10px;
+	height: 225px;
+	text-align:center;
+}
+#polubnas
+{
+	width: 100%;
+	color: #FFFFFF;
+	font-size: 25px;
+	text-align:center;
+}
+#midgaleriawidth
+{
+	width: 100%;
+	height: 1425px;
+}
+#midgaleria
+{
+	width: 970px;
+    margin-left:auto;
+	margin-right:auto;
+	background-image: url('../images/mid/galeria/midright.png');
+	
+}
+#filmikicontainer
+{
+	width:970px;
+	height:360px;
+}
+#midcentergaleria
+{
+	width: 968px;
+	margin-left:1px;
+	margin-right:1px;
+}
+#zdjeciatitle
+{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	clear:both;
+}
+#filmikititle
+{
+
+	height: 50px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	
+}
+#wiecejfilmikow
+{
+	margin-right:auto;
+	margin-left:auto;
+	width: 137px;
+	height: 188px;
+	background-image: url('../images/mid/galeria/wiecejfilmikow.png');
+}
+#wiecejfilmikow:hover
+{
+	margin-right:auto;
+	margin-left:auto;
+	width: 137px;
+	height: 188px;
+	background-image: url('../images/mid/galeria/wiecejfilmikow2.png');
+}
+#galeriastrona
+{
+	width: 968px;
+	height: 25px;
+	margin-bottom: 6px;
+	margin-top: 10px;
+	font-size: 20px;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#midwiecejinfo
+{
+	width:100%;
+	height:600px;
+}
+#midwiecejkapel
+{
+	width:100%;
+	height:700px;
+}
+#midwiecejczlo
+{
+	width:100%;
+	height: auto;
+
+}
+#wiecejinfokoncert
+{
+	width: 680px;
+
+}
+#wiecejimgkoncert
+{
+	width: 680px;
+	height: 50px;
+	margin-bottom:20px;
+	margin-top:20px;
+	background-image:url('../images/zdjeciazkoncertu.png');
+}
+#opiskoncertu
+{
+	color: #0000ff;
+	text-align:left;
+}
+#midgaleriaytwidth
+{
+	width: 100%;
+	height: 1350px;
+}
+#opiss
+{
+	text-align:center;
+}
+.filmikyt
+{
+	float:left;
+	width: 480px;
+	height: 268px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+}
+#kontaktmidhead
+{
+	width:970px;
+	text-align: left;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+#kontakttitle
+{
+	width: 650px;
+	height: 50px;
+	
+}
+#kontaktfrom
+{
+	width: 680px;
+	height: 540px;
+
+}
+#kontaktinfo
+{
+	width: 680px;
+	height: 100px;
+	
+}
+
+#repertuarmidhead
+{
+	width:970px;
+	height:100%;
+	text-align: center;
+	margin-left:auto;
+	margin-right:auto;
+}
+#repertuartitle
+{
+	width: 100%;
+	height: 50px;
+	text-align:center;
+}
+#posluchajtitle
+{
+	width: 100%;
+	height: 50px;
+	font-size: 48px; 
+	color: blue;
+}
+#repertuartlo
+{
+	background-image: url('../images/mid/repertuar/.png');
+}
+.rep
+{
+	width: 100%;
+	height: 40px;
+	margin-bottom:25px;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#midrepertuar
+{
+	width:100%;
+	height:600px;
+}
+#infomidhead
+{
+	width:970px;
+	text-align: center;
+	font-size: 20px;
+	color: #0000ff;
+	margin-left:auto;
+	margin-right:auto;
+}
+#midkoncert
+{
+    width:100%;
+	height:600px;
+}
+#koncertmidhead
+{
+	width:970px;
+	height:100%;
+	text-align: left;
+}
+#plakat
+{
+	padding-top:40px;
+}
+#nastepnykoncerttitle
+{
+	height: 50px;
+	width: 680px;
+	color:blue;
+	font-size:40px;
+	text-align:center;
+	padding-top:20px;
+}
+ul.rep
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+ul.rep > li
+{
+	padding-top: 10px;
+}
+ol
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	font-family: cursive;
+    line-height:200%;
+	z-index:100;
+}
+ol a:hover
+{
+	background-color:#d1d1d1;
+}
+ol a
+{
+	display:block; 
+}
+ol > li
+{
+	float: left;
+	width:170px;
+	height: 35px;
+	border-right: 1px dashed #000000;
+}
+ol > li:first-child
+{
+	float: left;
+	width:170px;
+	height: 35px;
+	border-left: 1px dashed #000000;
+}
+ol > li > ul
+{
+	padding:0;
+	margin: 0;
+	list-style-type: none;
+	height:35px;
+	display: none;
+}
+ol > li:hover > ul
+{
+	display: block;
+}
+ol > li > ul > li
+{
+	background-color: #e2e2e2;
+	position:relative;
+	z-index:100;
+	border-top: 1px dashed #000000;
+}
+ol > li > ul > li:hover
+{
+	background-color: #d1d1d1;
+}
+#obrazkapel
+{
+	width:100%;
+	height:533px;
+	background-image: url('../images/mid/informacje/kapel.jpg');
+}
+#opiskapel
+{
+	float:left;
+	width:60%;
+	height:100%;
+	margin:15px;
+	opacity:0.5;
+	color:#000000;
+	background-color:#ffffff;
+	font-size:15px;
+}
+#opiskapelnic
+{
+	float:left;
+	width:40%;
+	height:33px;
+}
+#lista1, #lista2, #lista3, #lista4, #lista5, #lista6
+{
+   display: none;
+   
+}
+#sekcja1, #sekcja2, #sekcja3, #sekcja4, #sekcja5, #sekcja6, #sekcja7, #sekcja8, #sekcja9, #sekcja10, #sekcja11, #sekcja12 
+{
+  display: none;
+}
+#logowanie
+{
+	width:400px;
+	height:400px;
+	text-align:center;
+	color:blue;
+	font-weight:bold;
+	margin:auto;
+	margin-top:100px;
+}
+.top{
+				text-align:center;
+			}
+			#menu{
+				
+			}
+			#left
+			{
+				
+				height:400px;
+				background-color:#1a315c;
+				padding-top:60px;
+			}
+			#right
+			{
+				
+				height:400px;
+				background-color:#1a315c;
+			}
+			#center
+			{
+				margin-right:auto;
+				margin-left:auto;
+			}
+			#tlo
+			{
+				background-color:#1a315c;
+			}
+			#tlobot
+			{
+				background-color:#FFFFE0;
+			}
+			#toplogo{
+				width:100%;
+				height:144px;
+				background-repeat:no-repeat;
+			}
+			#topinfo{
+				width:100%;
+				color:#FFFFFF;
+			}
+			#midaktcon{
+				margin-top:50px;
+				margin-bottom:50px;
+				text-align:center;
+			}
+			#nad{
+				margin-top:50px;
+			}
+@media (min-width: 10px) {
+#obrazkapel {
+    display:none;
+  }
+  #opiskapelmobile
+  {
+	  display:block;
+  }
+}
+@media (min-width: 768px) {
+#obrazkapel {
+    display:block;
+  }
+  #opiskapelmobile
+  {
+	  display:none;
+  }
+}

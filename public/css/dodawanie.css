@@ -1,0 +1,40 @@
+
+#newlinia
+{
+	width: 680px;
+	height: 15px;
+	background-image:url('../images/mid/stronaglowna/linia.png')
+}
+#newtitle
+{
+	width:680px;
+	height:50px;
+	font-size:40px;
+	font-family:verdana;
+}
+#newdata
+{
+	width:680px;
+	height:25px;
+}
+#newimg
+{
+	float:left;
+	width:160px;
+	height:160px;
+}
+#newopis
+{
+	float:left;
+	padding-left: 20px;
+	width:500px;
+	height:175px;
+    color: #0000FF;	
+}
+#newprzedwiecej
+{
+	clear:both;
+	float:left;
+	width:580px;
+	height:50px;
+}
