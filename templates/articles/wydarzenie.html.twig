@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mod Rząśnia-Wydarzenie{% endblock %}
+
+{% block body %}
+
+    <div class="container" id="midaktcon">
+
+	  <div class="row">
+	  <div class="col-md-12 col-lg-8">
+	   <div id="midleft">
+	   <main>
+	    <article>
+	    <div class="row justify-content-around">
+                  <div class='col- align-self-center'>
+                  <header><div class='newtitle'>
+		          <h2 class='title_news'><b>{{wydarzenie.title}}</b></h2>
+		          </div></header></div><div class='w-100'></div>
+		          <div class='col- align-self-center'><div class='newdata'>
+		          Data: <b><time>{{wydarzenie.data_dodania}}</time></b>
+		          </div></div><div class='w-100'></div>
+		          <div class="col- align-self-center"><div id="opiskoncertu">{{wydarzenie.opis_dlugi}}</div></div><div class="w-100"></div>
+				  <div class="col- align-self-center"><div id="galnews">ZDJĘCIA Z KONCERTU<br></div></div><div class="w-100"></div>
+				  <div class="col- align-self-center"><div id="galtlonews">
+                  <div class="galeriaimg">
+                      
+		          <p>Wstawić galerię</p>
+
+		  
+                  </div></div></div>
+				  </div>
+			
+		 
+
+            
+			  </article>
+			 </main>
+			</div>
+			</div>
+	  <div class="col-md-12 col-lg-4">
+	   <div id="midright" style="margin-top:30px;">
+	    
+{{ include('inc/aside.html.twig')}}  
+	   
+	   </div>
+	   </div>
+	 </div>
+
+  
+  
+     </div>
+    
+{% endblock %}

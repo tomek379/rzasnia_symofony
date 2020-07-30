@@ -34,7 +34,7 @@
 		          <div class='col-md-12 col-lg-8'><div class='newopis'>{{article.opis_krotki}}
 		          </div></div><div class='w-100'></div>
 		          <div class='col-md-0 col-lg-10'><div class='newprzedwiecej'></div></div>
-		          <div class="col-md-12 col-lg-2"><form action="news.php" method="get"><button style="background:none; border:none; cursor:pointer;" name="idnews" value="{{article.id}}"><div class="newwiecej"></div></button></form></div><div class="w-100"></div>
+		          <div class="col-md-12 col-lg-2"><a href="/wydarzenie/{{article.id}}"><button style="background:none; border:none; cursor:pointer;" name="idnews"><div class="newwiecej"></div></button></a></div><div class="w-100"></div>
 		          </div></div>
 				  </section></div>
             {% endfor %}

@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class ArticleController extends Controller{
     /**
-    * @Route("/")
+    * @Route("/", name="strona_glowna")
     * @Method({"GET"})
     */
     public function index(){
@@ -19,6 +19,18 @@ class ArticleController extends Controller{
         
         
         return $this->render('articles/index.html.twig',array('wydarzenia'=>$wydarzenia));
+    }
+    
+    /**
+    * @Route("/wydarzenie/{id}", name="wydarzenie")
+    * @Method({"GET"})
+    */
+    public function wydarzenie($id){
+        
+        $wydarzenie=$this->getDoctrine()->getRepository(Wydarzenia::class)->find($id);
+        
+        
+        return $this->render('articles/wydarzenie.html.twig',array('wydarzenie'=>$wydarzenie));
     }
     
    /**
