@@ -3,7 +3,64 @@
 {% block title %}Mod Rząśnia-Strona Główna{% endblock %}
 
 {% block body %}
-<h1>Etap 1<h1>
-    <div class="pierwszy">Test pierwszego</div>
+
+  <div class="container" id="midaktcon">
+	  <div class="row">
+	   <div class="col-md-12 col-lg-8">
+	   <div id="midleft">
+	   <main>
+	    <article>
+		<div class="col-">
+		<header>
+	    <div id="midleftinfo"><h1 class="article">Aktualności</h1>
+		</div>
+		</header>
+		</div>
+        {% if wydarzenia %}
+            {% for article in wydarzenia %}
+				  <div class='col-'><section>
+				  <div class='new'>
+				  <div class='row no-gutters'>
+		          <div class='col-'><div class='newlinia'></div></div>
+		          <div class='col-'><header><div class='newtitle'>
+		          <h2 class='title_wpis'><b>{{ article.title }}</b></h2>
+		          </div></header></div><div class='w-100'></div>
+		          <div class='col-md-12 col-lg-3'><div class='newdata'>
+		          Data: <b><time>{{article.data_dodania}}</time></b>
+		          </div></div><div class='w-100'></div>
+		          <div class='col-md-12 col-lg-4'><div class='newimg'>
+		          <figure><img class='akt' src='wydarzenia/{{article.title_folder}}/1.jpg' alt='miniaturka-aktualnosci'/></figure>
+		          </div></div>
+		          <div class='col-md-12 col-lg-8'><div class='newopis'>{{article.opis_krotki}}
+		          </div></div><div class='w-100'></div>
+		          <div class='col-md-0 col-lg-10'><div class='newprzedwiecej'></div></div>
+		          <div class="col-md-12 col-lg-2"><form action="news.php" method="get"><button style="background:none; border:none; cursor:pointer;" name="idnews" value="{{article.id}}"><div class="newwiecej"></div></button></form></div><div class="w-100"></div>
+		          </div></div>
+				  </section></div>
+            {% endfor %}
+            {% else %}
+             <p>Brak aktualności</p>
+            {%  endif %}
+		<div class="col-" id="nad">
+		<div class="stronapage">
+			 <a class="aktual" href="aktualnosci.php"><br>Pokaż wszystkie aktualności</a>
+	    </div>
+		</div>
+			  </article>
+			 </main>
+			</div>
+			</div>
+			<div class="col-md-12 col-lg-4">
+	   <div id="midright" style="margin-top:30px;">
+           
+{{ include('inc/aside.html.twig')}}  
+	   
+	   </div>
+	   </div>
+	  </div>
+
+
+  
+  </div>
     
 {% endblock %}

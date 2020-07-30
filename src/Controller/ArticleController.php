@@ -1,6 +1,8 @@
 <?php
 namespace App\Controller;
 
+use App\Entity\Wydarzenia;
+
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
@@ -12,8 +14,40 @@ class ArticleController extends Controller{
     * @Method({"GET"})
     */
     public function index(){
-        return $this->render('articles/index.html.twig');
+        
+        $wydarzenia=$this->getDoctrine()->getRepository(Wydarzenia::class)->findAll();
+        
+        
+        return $this->render('articles/index.html.twig',array('wydarzenia'=>$wydarzenia));
     }
+    
+   /**
+    * @Route("/save")
+   
+    */
+    /*
+    public function save() {
+       $entityManager = $this->getDoctrine()->getManager();
+
+       $wydarzenia = new Wydarzenia();
+       $wydarzenia->setTitle('Dni Rząśni');
+       $wydarzenia->setData_dodania('2019-10-23');
+       $wydarzenia->setTitle_folder('dnirzasni');
+       $wydarzenia->setOpis_krotki('Opis krótki 2');
+       $wydarzenia->setOpis_dlugi('Opis długi 2');
+       $wydarzenia->setIlosc_zdjec('1');
+       $wydarzenia->setDodal('Moderator');
+      
+
+       $entityManager->persist($wydarzenia);
+
+       $entityManager->flush();
+
+       return new Response('Saved an article with the id of  '.$wydarzenia->getId());
+     }
+    */
+    
+    
     /**
     * @Route("/galeria")
     * @Method({"GET"})
