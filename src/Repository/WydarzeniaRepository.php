@@ -47,4 +47,22 @@ class WydarzeniaRepository extends ServiceEntityRepository
         ;
     }
     */
+    
+    public function showdatatimeindex()
+    {
+        return $this->createQueryBuilder('w')
+            ->addOrderBy('w.data_dodania', 'DESC')
+            ->setMaxResults(5)
+            ->getQuery()
+            ->getResult()
+        ;
+    }
+    public function showdatatime()
+    {
+        return $this->createQueryBuilder('w')
+            ->addOrderBy('w.data_dodania', 'DESC')
+            ->getQuery()
+            ->getResult()
+        ;
+    }
 }

@@ -15,8 +15,9 @@ class ArticleController extends Controller{
     */
     public function index(){
         
-        $wydarzenia=$this->getDoctrine()->getRepository(Wydarzenia::class)->findAll();
+        $wyd=$this-> getDoctrine()-> getManager();
         
+        $wydarzenia=$wyd-> getRepository(Wydarzenia::class)->showdatatimeindex();
         
         return $this->render('articles/index.html.twig',array('wydarzenia'=>$wydarzenia));
     }
@@ -42,13 +43,13 @@ class ArticleController extends Controller{
        $entityManager = $this->getDoctrine()->getManager();
 
        $wydarzenia = new Wydarzenia();
-       $wydarzenia->setTitle('Dni Rząśni');
-       $wydarzenia->setData_dodania('2019-10-23');
-       $wydarzenia->setTitle_folder('dnirzasni');
-       $wydarzenia->setOpis_krotki('Opis krótki 2');
-       $wydarzenia->setOpis_dlugi('Opis długi 2');
-       $wydarzenia->setIlosc_zdjec('1');
-       $wydarzenia->setDodal('Moderator');
+       $wydarzenia->setTitle('Koncert');
+       $wydarzenia->setData_dodania('2019-12-23');
+       $wydarzenia->setTitle_folder('koncert');
+       $wydarzenia->setOpis_krotki('Opis krótki 3');
+       $wydarzenia->setOpis_dlugi('Opis długi 3');
+       $wydarzenia->setIlosc_zdjec('3');
+       $wydarzenia->setDodal('Admin');
       
 
        $entityManager->persist($wydarzenia);
@@ -57,15 +58,22 @@ class ArticleController extends Controller{
 
        return new Response('Saved an article with the id of  '.$wydarzenia->getId());
      }
-    */
     
+    */
     
     /**
     * @Route("/galeria")
     * @Method({"GET"})
     */
     public function galeria(){
-        return $this->render('articles/galeria.html.twig');
+        
+        $wyd=$this-> getDoctrine()-> getManager();
+        
+        $wydarzenia=$wyd-> getRepository(Wydarzenia::class)->showdatatime();
+        
+        
+        return $this->render('articles/galeria.html.twig',array('wydarzenia'=>$wydarzenia));
+        
     }
     /**
     * @Route("/galeria_yt")

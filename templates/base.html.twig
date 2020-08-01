@@ -3,24 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        
+        {% endblock %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         
         <link rel="stylesheet" href="{{ asset('css/menu.css') }}">
         <link rel="stylesheet" href="{{ asset('css/dodawanie.css') }}">
         <link rel="stylesheet" href="{{ asset('css/rozwijanie.css') }}">
         <link rel="stylesheet" href="{{ asset('css/fontello.css') }}">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        
+        
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
 	    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
         <script src="{{ asset('js/slidemenu.js') }}"></script>
-        <script src="{{ asset('js/zmiana.js') }}"></script>
+        
+        
+     
 	    <link rel="Shortcut icon" href="{{ asset('img/logo.png') }}" />
 	    <script src="{{ asset('js/menu.js') }}"></script>
 	    <script src="{{ asset('js/index.js') }}"></script>
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('css/stylemenu.css') }}">
         
-        {% block stylesheets %}{% endblock %}
+
+        
+        
     </head>
     <body>
         {{ include('inc/top.html.twig')}}

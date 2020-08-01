@@ -1,0 +1,90 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mod Rząśnia-Galeria{% endblock %}
+
+  {% block stylesheets %}
+
+ <link rel="stylesheet" href="dist/css/lightbox.min.css">
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container" id="midaktcon">
+	  <main>
+	  <div class="row justify-content-around">
+	   <div class="col-12 align-self-center">
+	  <article>
+	  <div class="row justify-content-around">
+	  <div class="col- align-self-center">
+	  <header>
+	   <div id="filmikititle"><h1 class="article">Nasze Filmiki</h1></div>
+	   </header>
+	   </div><div class="w-100"></div>
+	   <div class="col-sm-12 col-md-6 col-lg-3 align-self-center">
+	   <div class="galeriavideo">
+	    <iframe class="img-fluid" src="https://www.youtube.com/embed/5fhrcXFHSRk" allowfullscreen></iframe>
+	   </div>
+	   </div>
+	   <div class="col-sm-12 col-md-6 col-lg-3 align-self-center">
+	   <div class="galeriavideo">
+	     <iframe class="img-fluid" src="https://www.youtube.com/embed/b9FYdW8Qsmg" allowfullscreen></iframe>
+	   </div>
+	   </div>
+	   <div class="col-sm-12 col-md-6 col-lg-3 align-self-center">
+	   <div class="galeriavideo">
+	     <iframe class="img-fluid" src="https://www.youtube.com/embed/iMrothLiG_g" allowfullscreen></iframe>
+	   </div>
+	   </div>
+	   <div class="col-sm-12 col-md-6 col-lg-3 align-self-center">
+	   <a href="../galeria/galeria-yt.php" title="Więcej filmików"><div id="wiecejfilmikow"></div></a>
+	   </div><div class="w-100"></div>
+	   </div>
+	   </article>
+	   </div>
+	   <div class="col-12 align-self-center">
+	   <article>
+	   <div class="row justify-content-around">
+	   <div class="col- align-self-center">
+	   <header><div id="zdjeciatitle"><h1 class="article">Galeria</h1></div></header>
+	   </div><div class="w-100"></div>
+           
+      
+		
+			{% if wydarzenia %}
+         {% for article in wydarzenia %}
+           
+<div class="col-sm-12 col-md-6 col-lg-3 align-self-center"><section>
+<div class="galeriacontainerimg">
+<div class="galeriaimg">
+    
+      <a class="example-image-link" href="wydarzenia/{{article.title_folder}}/1.jpg" data-lightbox="{{article.title_folder}}" data-title="Click the right half of the image to move forward."><img class="galeria" src="wydarzenia/{{article.title_folder}}/1.jpg" alt=""/></a>
+    <span style="display: none;">
+{% for i in 2..article.ilosc_zdjec %}
+      <a class="example-image-link" href="wydarzenia/{{article.title_folder}}/{{i}}.jpg" data-lightbox="{{article.title_folder}}" data-title="Or press the right arrow on your keyboard."><img class="example-image" src="wydarzenia/{{article.title_folder}}/2.jpg" alt="" /></a>
+        
+{% endfor %}
+      </span>
+  
+</div><div class="galeriaimgtitle"><header><h2 class="galeria"><b>{{article.title}}</b></h2></header></div>
+<div class="galeriaimgdata"><time>{{article.data_dodania}}</time></div></div>
+</section></div>
+{% endfor %}
+           {% else %}
+           <p>Brak zdjęć</p>
+           {% endif %}
+		 
+		
+
+		</div>
+</article>
+</div>
+</div>
+      </main>
+	  
+
+        
+   
+     </div>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+{% endblock %}
